@@ -1,0 +1,5 @@
+com/jtm/jsf/bean/SampleApplicationScopedBean.class
+com/jtm/jsf/bean/SampleSessionScopeBean.class
+com/jtm/jsf/page/WelcomePageBean.class
+com/jtm/jsf/Config.class
+com/jtm/jsf/bean/SampleViewScopedBean.class
