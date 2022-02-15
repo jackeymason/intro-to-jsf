@@ -12,15 +12,37 @@
     	<h:panelGrid columns="2">
     		<h:outputLabel for="pw" value="Please enter a password" />
     		<h:inputSecret id="pw" />	
-   	 		<h:outputLabel for="ta" value="This is a textarea" />
+   	 			<h:outputLabel for="ta" value="This is a textarea" />
    	 		<h:inputTextarea id="ta" cols="8" rows="10" />
    	 		
-   	 		<h:outputLabel for="ta" value="This is a selectOneRadio" />
+   	 		<h:outputLabel value="This is a selectOneRadio" />
    	 		<h:selectOneRadio value="#{componentListing.selectOneRadioSelection}" >
    	 			<f:selectItem  noSelectionOption="true" itemLabel="--Please select an dessert--" />
    	 			<f:selectItems value="#{dessertDao.desserts}" var="dessert" 
    	 			itemValue="#{dessert.dessertId}" itemDescription="#{dessert.dessertName}" itemLabel="#{dessert.dessertName}" />
    	 		</h:selectOneRadio>
+   	 		
+   	 		<h:outputLabel value="This is a selectOneMenue" />
+   	 		<h:selectOneMenu value="#{componentListing.selectOneMenu}" >
+   	 			<f:selectItem  noSelectionOption="true" itemLabel="--Please select an dessert--" />
+   	 			<f:selectItems value="#{dessertDao.desserts}" var="dessert" 
+   	 			itemValue="#{dessert.dessertId}" itemDescription="#{dessert.dessertName}" itemLabel="#{dessert.dessertName}" />
+   	 		</h:selectOneMenu>
+   	 		
+   	 		<h:outputLabel value="This is a selectOneListbox" />
+   	 		<h:selectOneListbox value="#{componentListing.selectListBoxSelection}" >
+   	 			<f:selectItem  noSelectionOption="true" itemLabel="--Please select an dessert--" />
+   	 			<f:selectItems value="#{dessertDao.desserts}" var="dessert" 
+   	 			itemValue="#{dessert.dessertId}" itemDescription="#{dessert.dessertName}" itemLabel="#{dessert.dessertName}" />
+   	 		</h:selectOneListbox>
+   	 		
+   	 		<h:outputLabel value="This is a selectManyCheckbox" />
+   	 		<h:selectManyCheckbox value="#{componentListing.selectManyCheckboxSelections}" >
+   	 			<f:selectItem  noSelectionOption="true" itemLabel="--Please select an dessert--" />
+   	 			<f:selectItems value="#{dessertDao.desserts}" var="dessert" 
+   	 			itemValue="#{dessert.dessertId}" itemDescription="#{dessert.dessertName}" itemLabel="#{dessert.dessertName}" />
+   	 		</h:selectManyCheckbox>
+   	 		
    	 		
     	</h:panelGrid>
     </h:form>

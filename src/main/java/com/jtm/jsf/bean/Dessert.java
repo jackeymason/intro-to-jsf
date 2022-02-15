@@ -4,31 +4,24 @@ public class Dessert {
 	private String dessertName;
 	private int dessertId;
 
-	public Dessert(String dessertName) {
+	public Dessert(String dessertName, int dessertId) {
 		this.dessertName = dessertName;
+		this.dessertId = dessertId;
 	}
-	public Dessert(String dessert, int dessertId) {
-		// TODO Auto-generated constructor stub
-	}
-	public String getdessertName() {
+	public String getDessertName() {
 		return dessertName;
 	}
 
-	public void setdessertName(String dessertName) {
+	public void setDessertName(String dessertName) {
 		this.dessertName = dessertName;
 	}
 	
-	public int getdessertId() {
+	public int getDessertId() {
 		return dessertId;
 	}
 
-	public void setdessertId(int dessertId) {
+	public void setDessertId(int dessertId) {
 		this.dessertId = dessertId;
 	}
-	public long getDessertId() {
-		// TODO Auto-generated method stub
-		return dessertId;
-	}
-	
-	
+		
 }
